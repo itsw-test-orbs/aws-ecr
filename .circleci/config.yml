@@ -19,6 +19,6 @@ workflows:
           requires:
             - aws-ecr/build-and-push-image
           family: 'circleci-test-task'
-          cluster-name: 'circleci-test-cluster2'
-          service-name: 'circleci-test-service2'
+          cluster-name: 'circleci-test-cluster'
+          service-name: 'circleci-test-service'
           container-image-name-updates: 'container=circleci-test-container,tag=latest'
